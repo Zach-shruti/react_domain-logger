@@ -30,14 +30,26 @@ const App = () => {
         <Text></Text>
       </View>
       <View style={styles.circleContainer}>
-        <View style={styles.circle}></View>
-        <Image
-          source={require('./assets/icons/add.png')}
-          style={styles.icon}
-        />
+        <View style={styles.circle}>
+          <Image
+            source={require('./assets/icons/add.png')}
+            style={styles.circleIcon}
+          />
+        </View>
       </View>
       <View style={styles.footer}>
-        <Text style={styles.footerText}></Text>
+        <Image
+          source={require('./assets/icons/domain.png')}
+          style={styles.footerIcon}
+        />
+        <Image
+          source={require('./assets/icons/operation.png')}
+          style={styles.footerIcon}
+        />
+        <Image
+          source={require('./assets/icons/tivity.png')}
+          style={styles.footerIcon}
+        />
       </View>
     </View>
   );
@@ -51,50 +63,50 @@ const styles = StyleSheet.create({
     height: 60,
     width: '100%',
     backgroundColor: '#D8F1EB',
-    flexDirection: 'row', // Arrange items in a row
+    flexDirection: 'row',
     alignItems: 'center',
-    paddingHorizontal: 20, // Add some padding
+    paddingHorizontal: 20,
     borderBottomWidth: 1,
     borderBottomColor: '#ddd',
   },
   flexSpace: {
-    flex: 1, // Take up remaining space to push the search icon to the right
+    flex: 1,
   },
   icon: {
     width: 24,
     height: 24,
   },
   rectangle: {
-    height: 35,
-    width: '95%',
+    height: 30,
+    width: '97%',
     backgroundColor: '#D8F1EB',
     justifyContent: 'center',
     alignItems: 'flex-start',
-    alignSelf: 'center', // Center the rectangle horizontally
-    marginVertical: 10, // Add some vertical margin for spacing
-    borderRadius: 5, // Add border radius here
-    paddingLeft: 10, // Add left padding for spacing
+    alignSelf: 'center',
+    marginVertical: 10,
+    borderRadius: 5,
+    paddingLeft: 15,
   },
   rectangleText: {
-    fontSize: 14,
+    fontSize: 12,
   },
   rectangleContainer: {
-    flexDirection: 'row', 
-    justifyContent: 'space-between', // Space the rectangles evenly
-    width: '95%',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    width: '97%',
     alignSelf: 'center',
-    marginVertical: 5, // Add some vertical margin for spacing
+    marginVertical: 5,
   },
   smallRectangle: {
-    height: 50,
-    width: '48%', // This is approximately half of the upper rectangle's width
+    height: 40,
+    width: '48%',
     backgroundColor: '#D8F1EB',
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: 5,
   },
   smallRectangleText: {
-    fontSize: 14,
+    fontSize: 13,
   },
   content: {
     flex: 1,
@@ -111,29 +123,32 @@ const styles = StyleSheet.create({
     height: 70,
     width: 70,
     backgroundColor: '#D8F1EB',
-    borderRadius: 50,
+    borderRadius: 35,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
-
-  icon: {
-    width: 24,
+  circleIcon: {
     height: 24,
+    width: 24,
   },
-  
   footer: {
     height: 60,
     width: '100%',
-    backgroundColor: '#D8F1EB',
-    justifyContent: 'center',
+    backgroundColor: '#539083',
+    flexDirection: 'row',
+    justifyContent: 'space-around',
     alignItems: 'center',
     borderTopWidth: 1,
     borderTopColor: '#ddd',
   },
-  footerText: {
-    fontSize: 16,
+  footerIcon: {
+    width: 24,
+    height: 24,
   },
 });
 
 export default App;
+
 
 
 
