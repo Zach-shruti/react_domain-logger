@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
   },
   rectangle: {
     height: 35,
-    width: '95%', // This is approximately '100% - 20px' considering some padding
+    width: '95%',
     backgroundColor: '#D8F1EB',
     justifyContent: 'center',
     alignItems: 'flex-start',
@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
   },
   rectangleContainer: {
-    flexDirection: 'row', // Arrange children in a row
+    flexDirection: 'row', 
     justifyContent: 'space-between', // Space the rectangles evenly
     width: '95%',
     alignSelf: 'center',
